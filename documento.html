@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @charset "UTF-8";
+body{
+    padding: 5%;
+    background-color: #f1f3fe;
+}
+
+
+nav.navegação a {
+
+  color: inherit;        
+
+  text-decoration: none;  
+
+}
+nav.navegação {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 40px;
+}
+
+nav.navegação ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+
+   
+}
+
+nav.navegação .acao {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+nav.navegação h1.logo {
+  margin-right: 10px;
+}
+
+.buttonajeitado {
+  background-color: #df6951;
+  color: #fff;
+  border: none;
+  border-radius: 48px;
+  padding: 12px 29px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+    
+
+.principal 
+{ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 40px;
+ padding: 10px;
+ 
+ } 
+.main1
+ { display: flex;
+ flex-direction: column;
+ flex: 1;
+ gap: 15px;
+ max-width: 500px;
+
+ } 
+ 
+ 
+.DemoFerias { 
+    max-width: 450px;
+ width: 100%;
+ height: auto;
+ flex: 1;
+            max-width: 45%;
+            border-radius: 20px;
+            box-shadow: 0 14px 50px rgba(0,0,0,0.15);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: all 0.10s ease;
+            animation: imagemdamulherdamala 6s infinite ease-in-out;
+             transform: perspective(1000px) rotateY(5deg) scale(1.03);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+                 align-self: flex-start;
+
+                
+ 
+}
+.ListaServiços {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+.clima,
+.aviao,
+.evento,
+.custom {
+    padding: 40px 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ListaServiços img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ListaServiços h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #14183e;
+}
+
+.ListaServiços {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 60px;
+}
+
+.ListaServiços img,
+.ListaServiços h3,
+.ListaServiços p {
+    text-align: center;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: auto;
+}
+
+.ListaServiços img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+.ListaServiços h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.serviços {
+  text-align: center;
+}
+.cartazes {
+  text-align: center;
+  padding: 60px;
+    background-color: #eceff2;
+}
+.lista-destinos {
+display: flex;
+justify-content: center;
+gap: 50px;
+margin-top: 40px;
+text-align: left;
+
+}
+
+.booking {
+  position: relative;
+  padding-right: 50%;
+  min-height: 400px;
+}
+
+.ImagemGrid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ImagemGrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .booking {
+    padding-right: 0;
+    min-height: auto;
+  }
+  
+  .ImagemGrid {
+    position: static;
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+
+footer {
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #e9edf2;
+  border-radius: 59px;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contato h3 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  max-width: 80%;
+}
+
+.formulario-email {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.seuemail {
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+
+.formulario-email button {
+  background-color: #df6951;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+
+.destinons {
+  padding: 60px;
+  text-align: center;
+}
+
+.titulodestinos h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.titulodestinos h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.destinos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.alinhamento {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.alinhamento img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.alinhamento span {
+  display: block;
+  font-size: 14px;
+  color: #5e6282;
+  margin-bottom: 4px;
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 40px;
+}
+
+.passo {
+  text-align: left;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.passo:hover {
+  transform: translateY(-5px);
+}
+
+.passo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.passo h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #14183e;
+}
+
+.passo p {
+  font-size: 14px;
+  color: #5e6282;
+  line-height: 1.6;
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 0;
+}
+
+.passo {
+  text-align: left;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.passo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.passo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.passo h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #14183e;
+}
+
+.passo p {
+  font-size: 14px;
+  color: #5e6282;
+  line-height: 1.6;
+}
+
+
+.imagem-grecia img {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+  
+
+
+    </style>
+    
+</head>
+<body>
+<header>
+    <nav class="navegação">
+        <h1 class="logo">Jadoo</h1>
+        <ul>
+            <li> <a href="#">Desitnations</a></li>
+            <li><a href="#">Hostels</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Bookings</a></li>
+            <li> <a href="#">Login</a></li>
+        </ul>
+        <div class="acao">
+        <button>Sign up</button>
+        <ul><li><a href="#">EN</a></li></ul>
+        </div>
+    </nav>
+</header>
+<section class="principal">
+<div class="main1">
+
+<h4 style="color: #881919;">BEST DESTINATIONS AROUND THE WORLD</h4>
+<h1 style="color: #0e0755;">Travel, enjoy and live a new full life</h1>
+<p style="color: #5f5c5c;"> Built Wicket longer admire do barton vanity itself do in it.
+        Preferred to sportsmen it engrossed listening. Park gate sell
+        they west hard for the.</p>
+        <div class="ajeitaressebutton">
+<button style="background-color: #FFC107;
+color: white;
+padding: 16px 27px;
+border-radius: 8px;
+border: none;
+cursor: pointer;">Find out more</button>
+</div>
+<div class="ajeitaressebutton">
+<button class="buttonajeitado">Play Demo</button>
+           </div>
+</div>
+<img class="DemoFerias" src="https://img.freepik.com/fotos-gratis/senhora-de-bom-humor-esta-pulando-em-um-fundo-laranja-com-ingressos-e-mala-divirta-se-mulher-feliz-com-cabelo-curto-ondulado-em-oculos-de-sol-com-tenis_197531-17921.jpg?semt=ais_hybrid&w=740" alt="mulhercommala">
+</section>
+
+<div class="serviços">
+<h4 class="InicioServiços">CATEGORY</h4>
+<h2 class="apresentaçãoserviços">We offer Best Services</h2>
+</div>
+<div class="ListaServiços">
+    <div class="clima">
+    <img class="clima" src="https://cdn-icons-png.flaticon.com/512/5538/5538361.png" alt="">
+    <h3>Calculated Weather</h3>
+    <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+</div>
+<div class="aviao">
+    <img class="Aviao" src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png" alt="">
+    <h3>Best Flights</h3>
+    <p> Engrossed listening. Park gate sell they west hard for the</p>
+</div>
+<div class="evento">
+    <img class="Evento" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4oSAZkVmHTQYXyhxfGRrust8sd_ulla67A&s" alt="">
+    <h3>Local Events</h3>
+    <p>Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
+</div>
+    <div class="custom">
+        <img class="custom" src="https://cdn-icons-png.flaticon.com/512/7596/7596520.png" alt="">
+        <h3>Customization</h3>
+        <p> We deliver outsourced aviation services for military customers</p>
+</div>
+</div>
+<section class="destinons">
+  <div class="titulodestinos">
+    <h4>Top Selling</h4>
+    <h2>Top Destinations</h2>
+  </div>
+
+  <div class="destinos">
+    <div class="alinhamento">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4pXRSJHr20ekEGruI3k17p79KLD1JFojeFw&s" alt="Rome, Italy" />
+      <span>Rome, Italy</span>
+      <span>$5,42k</span>
+      <span>10 Days Trip</span>
+    </div>
+
+    <div class="alinhamento">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHQTaMmYcHQjT3y4NmM4r9AgIJBrC1AhA_w&s" alt="London, UK" />
+      <span>London, UK</span>
+      <span>$4,2k</span>
+      <span>12 Days Trip</span>
+    </div>
+
+    <div class="alinhamento">
+      <img src="https://images.vexels.com/media/users/3/274863/isolated/preview/831304b14554135af431a657a19b814d-mapa-de-avc-da-europa.png" alt="Full Europe" />
+      <span>Full Europe</span>
+      <span>$15k</span>
+      <span>28 Days Trip</span>
+    </div>
+  </div>
+</section>
+<section>
+<div class="booking">
+  <div class="organizarh3">
+    <h3>Easy and fast</h3>
+    <h2 class="book">Book Your Next Trip In 3 easy Steps</h2>
+  </div>
+
+  <div class="passos">
+    <div class="passo">
+      <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png" alt="Choose Destination" />
+      <h5>Choose Destination</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+    </div>
+
+    <div class="passo">
+      <img src="https://cdn-icons-png.flaticon.com/512/5899/5899792.png" alt="Make Payment" />
+      <h5>Make Payment</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+    </div>
+
+    <div class="passo">
+      <img src="https://png.pngtree.com/png-vector/20250606/ourlarge/pngtree-taxi-car-sign-symbol-vector-png-image_16477330.png" alt="Reach Airport on Selected Date" />
+      <h5>Reach Airport on Selected Date</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p>
+  </div>
+  <div class="imagem-grecia">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaeqs2oHLEWt-qlAQqO7gYKbWfxUibHZUCHg&s" alt="Viagem pra grecia">
+    </div>
+</div>
+
+
+</section>
+</main>
+<footer>
+    <div class="contato">
+        <h3>Subscribe to get information, latest news and other interesting about Jadoo</h3>
+        <label for="email" class="visual">Your email</label>
+        <input type="email" class="seuemail" placeholder="Your email" required />
+    </div>
+</footer>
+
+    
+</body>
+</html>
